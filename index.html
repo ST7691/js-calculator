@@ -5,19 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <!-- daisy talwinnde css link -->
-     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet"  type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
   </head>
   <body>
     <header>
-      <h2 class="btn w-full btn-primary text-2xl">calculator</h2>
+
     </header>
-    <main>
+  <main>
 
-    </main>
-    <footer>
+ <div class="flex justify-around grid-cols-3">
+  <!-- card -->
+    <div class="card bg-base-100 w-96 shadow-sm grid-cols-3">
+  <figure class="px-10 pt-10">
+    <img
+      src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Triangle</h2>
+    <p>Area = 0.5 X b X h</p>
+    <p>Area = <span id="triangle-area"></span>cm<sup>2</sup></p>
+    <!-- input  -->
+    <input type="text" class="" name="" id="input-base" placeholder="base">
+    <input type="text" name="" id="input-hight" placeholder="hight">
+    <!-- button -->
+    <div class="card-actions ">
+      <button class="btn w-full btn-primary" onclick="TriangelArea()">Calculator</button>
+    </div>
+  </div>
+</div>
+    <div class="card bg-base-100 w-96 shadow-sm grid-cols-3">
+  <figure class="px-10 pt-10">
+    <img
+      src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Triangle</h2>
+    <p>Area = 0.5 X b X h</p>
+    <div class="card-actions">
+      <button class="btn btn-primary w-full">Calculator</button>
+    </div>
+  </div>
+</div>
+    <div class="card bg-base-100 w-96 shadow-sm grid-cols-3">
+  <figure class="px-10 pt-10">
+    <img
+      src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Triangle</h2>
+    <p>Area = 0.5 X b X h</p>
+    <div class="card-actions">
+      <button class="btn btn-primary w-full">Calculator</button>
+    </div>
+  </div>
+</div>
+    <div class="card bg-base-100 w-96 shadow-sm grid-cols-3">
+  <figure class="px-10 pt-10">
+    <img
+      src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Triangle</h2>
+    <p>Area = 0.5 X b X h</p>
+    <div class="card-actions">
+      <button class="btn btn-primary w-full">Calculator</button>
+    </div>
+  </div>
+</div>
 
-    </footer>
+     
+  <!-- area -->
+  <div class="w-md h-sm border-4">
+    <p>Area Calculation</p>
+  </div>
+ </div>
+  </main>
+    <footer></footer>
+    <!-- js link -->
     <script src="tailwind.config.js"></script>
+    <script src="triangle.js"></script>
   </body>
 </html>
